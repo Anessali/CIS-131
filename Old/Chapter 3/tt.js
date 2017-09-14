@@ -15,7 +15,7 @@ function addColumnHeaders(){
 
 function addCalenderDates(){
   var i = 1;
-var paragraphs = "";
+  var paragraphs = "";
   do {
 
     var tableCell = document.getElementById("08-" + i);
