@@ -1,3 +1,11 @@
+/*
+function go(name, age){
+    alert(name);
+    alert(age);
+}
+
+go("B-baka...", "hello?");
+*/
 var pictures = ["images/cat.jpg", "images/color.jpg"];
 
 function ImageSwap() {
@@ -11,4 +19,3 @@ function Swap(){
     
 }
 document.getElementById(cImage).addEventListener("click", )
-//document.write();
