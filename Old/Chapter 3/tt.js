@@ -50,8 +50,6 @@ function addGameInfo(){
   }
 }
 
-
-
 function setUpPage(){
     addColumnHeaders();
     addCalenderDates();

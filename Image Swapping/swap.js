@@ -1,21 +1,20 @@
-/*
-function go(name, age){
-    alert(name);
-    alert(age);
-}
+var pictures = ['<img src="images/cat.jpg">', '<img src="images/color.jpg">', '<img src="images/city.jpg">', '<img src="images/sea.jpg">'];
 
-go("B-baka...", "hello?");
-*/
-var pictures = ["images/cat.jpg", "images/color.jpg"];
-
-function ImageSwap() {
+function DisplayImage() {
     var count = 0;
-    var imgName;
-    //imgName = document.getElementById("cImage").src;
-    
+    var image = "";
+    var imgLoc;
+    imgLoc = document.getElementById("displayPic");
+    imgLoc.innerHTML = pictures[count];
 }
 
-function Swap(){
-    
+function AddIcons(){
+    var count = 0;
 }
-document.getElementById(cImage).addEventListener("click", )
+
+function StartScripts(){
+    DisplayImage();
+    AddIcons();
+}
+
+window.addEventListener("load", StartScripts, false)
