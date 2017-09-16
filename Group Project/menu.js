@@ -1,10 +1,9 @@
-var numOfMenuItems = 6; //controls number of menu items in menu
-
+var numOfMenuItems = 4; //controls number of items in menu
 //arrays
 var menuHeaders = ['Bracket Burgers', 'Pastries', 'Coffee'];
-var pic = ['<img src="images/pic.png" alt="...">'];
+var pic = ['pic.png'];
 //global counts
-var menuCount = 1; //global count variable for PopulateMenu
+//var menuCount = 1; //global count variable for PopulateMenu
 var itemCount = 1; //global count variable for PopulateMenuItems
 
 function PopulateMenu(){
@@ -33,7 +32,7 @@ function PopulateMenuItems(){
           '<div class="row">' +
             '<div class="col-sm-6 col-md-12">' +
               '<div class="thumbnail">' +
-                pic[0] +
+                '<img src="images/' + pic[0] + '" alt="...">' +
                 '<div class="caption">' +
                   '<h3>Thumbnail label</h3>' +
                   '<p>...</p>' +
