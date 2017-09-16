@@ -1,5 +1,9 @@
-var menuHeaders = ['Bracket Burgers', 'Pastries', 'Coffee'];
+var numOfMenuItems = 6; //controls number of menu items in menu
 
+//arrays
+var menuHeaders = ['Bracket Burgers', 'Pastries', 'Coffee'];
+var pic = ['<img src="images/pic.png" alt="...">'];
+//global counts
 var menuCount = 1; //global count variable for PopulateMenu
 var itemCount = 1; //global count variable for PopulateMenuItems
 
@@ -25,11 +29,11 @@ function PopulateMenuItems(){
     var leMenu;
     do { //populates menu items
       leMenu = ( //adds menu elements into variable
-        '<div class="col-md-4 centered" class="menuItem-">' + itemCount +
+        '<div class="col-md-4 centered" class="menuItem-">' +
           '<div class="row">' +
             '<div class="col-sm-6 col-md-12">' +
               '<div class="thumbnail">' +
-                '<img src="images/pic.png" alt="...">' +
+                pic[0] +
                 '<div class="caption">' +
                   '<h3>Thumbnail label</h3>' +
                   '<p>...</p>' +
@@ -46,7 +50,7 @@ function PopulateMenuItems(){
       getClass[2].innerHTML = leMenu;
       //document.getElementsById("menuItem-" + itemCount).innerHTML = leMenu;
       itemCount++;
-  } while (itemCount <= 6);
+  } while (itemCount <= numOfMenuItems);
 }
 
 function StartScripts(){
