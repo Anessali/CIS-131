@@ -1,15 +1,28 @@
 body{
     background-color: #2D2D2D;
     color: #D2D0C4;
-    
+
 }
-.center {
-    text-align: center;
-}
+
 div {
     text-align: center;
 }
+
+/**************
+      ID's
+**************/
 #displayPic img{
     width: 700px;
-    text-align: center;
+}
+
+/**************
+    Classes
+**************/
+.icon img{
+  margin-top: 50px;
+  width: 150px;
+}
+
+.icon img:hover{
+    opacity: .1;
 }

@@ -2,19 +2,25 @@ var pictures = ['<img src="images/cat.jpg">', '<img src="images/color.jpg">', '<
 
 function DisplayImage() {
     var count = 0;
-    var image = "";
+    var swap;
     var imgLoc;
     imgLoc = document.getElementById("displayPic");
     imgLoc.innerHTML = pictures[count];
+
+    do { //generates page icons
+      swap = document.getElementById("icon-" + count);
+      swap.innerHTML = pictures[count];
+      count++;
+    } while(count <= 3);
 }
 
-function AddIcons(){
-    var count = 0;
+function PicClick() {
+
 }
 
 function StartScripts(){
     DisplayImage();
-    AddIcons();
+    PicClick();
 }
 
 window.addEventListener("load", StartScripts, false)
