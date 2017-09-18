@@ -25,4 +25,5 @@ div {
 
 .icon img:hover{
     opacity: .1;
+    border: solid black 10px;
 }
