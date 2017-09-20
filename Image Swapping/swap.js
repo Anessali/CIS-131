@@ -1,5 +1,7 @@
-var pictures = ['<img src="images/cat.jpg" onclick="ClickOne()">', '<img src="images/color.jpg" onclick="ClickTwo()">',
-'<img src="images/city.jpg" onclick="ClickThree()">', '<img src="images/sea.jpg" onclick="ClickFour()">'];
+var pictures = ['<img id="0" src="images/cat.jpg" onclick="Click(this.id)">', '<img id="1" src="images/color.jpg" onclick="Click(this.id)">',
+'<img id="2" src="images/city.jpg" onclick="Click(this.id)">', '<img id="3" src="images/sea.jpg" onclick="Click(this.id)">'];
+//parallel arrays - possibly a better solution to this
+//
 
 function DisplayImage() {
     var count = 0;
@@ -11,7 +13,7 @@ function DisplayImage() {
       swap = document.getElementById("icon-" + count);
       swap.innerHTML = pictures[count];
       count++;
-    } while(count <= 3);
+    } while(count <= 3); //array.length to possibly improve this
 }
 /****************************************
 *                Timer                  *
@@ -32,21 +34,9 @@ function ImageSlider(){
 /****************************************
 *             Swaps Image               *
 ****************************************/
-function ClickOne() {
+function Click(arrayId){
     var icoImg = document.getElementById("displayPic");
-    icoImg.innerHTML = pictures[0];
-}
-function ClickTwo() {
-    var icoImg = document.getElementById("displayPic");
-    icoImg.innerHTML = pictures[1];
-}
-function ClickThree() {
-    var icoImg = document.getElementById("displayPic");
-    icoImg.innerHTML = pictures[2];
-}
-function ClickFour() {
-    var icoImg = document.getElementById("displayPic");
-    icoImg.innerHTML = pictures[3];
+    icoImg.innerHTML = pictures[arrayId];
 }
 
 //Starts script
