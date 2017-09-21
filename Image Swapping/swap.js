@@ -1,7 +1,6 @@
 var pictures = ['<img id="0" src="images/cat.jpg" onclick="Click(this.id)">', '<img id="1" src="images/color.jpg" onclick="Click(this.id)">',
 '<img id="2" src="images/city.jpg" onclick="Click(this.id)">', '<img id="3" src="images/sea.jpg" onclick="Click(this.id)">'];
 //parallel arrays - possibly a better solution to this
-//
 
 function DisplayImage() {
     var count = 0;
