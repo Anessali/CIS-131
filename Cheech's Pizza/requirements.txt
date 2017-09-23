@@ -1,0 +1,20 @@
+
+
+1. Textboxes:
+     Name
+     Phone Number
+2. Selection Box
+     Allows customer to order 1 to 10 pizzas
+3. Selection Box
+     Customer select type of pizza
+          1. Array[] - minimum 5 pizza types
+          2. Use javascript to write selection items in list
+               1. Bob can add new pizza flavor
+          3. addEventListener that produces summary of order
+               Display:
+               1. Customer's Name and Phone Number
+               2. Number of pizzas ordered
+          * Type of pizza ordered
+          1. Sub total of pizza order
+          2. Tax charged (7.6%)
+          3. Total of the order
