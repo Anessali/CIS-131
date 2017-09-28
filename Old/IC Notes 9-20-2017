@@ -1,0 +1,5 @@
+htmlString = '<img src="' + aryImg[i] + '" alt= "' + aryId[i] + '">'
+
+<img src="img.png" alt="Foto">
+
+htmlString = "Something" + variable + "New"
