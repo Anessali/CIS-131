@@ -8,3 +8,6 @@ body{
 .row{
      padding: 20px;
 }
+.btn-default{
+    margin-top: 10px;
+}

@@ -13,8 +13,8 @@
          <h1></h1>
           <div class="row">
                <div class="col-md-6">
-                    <!-- First part of form on left grid -->
-                    <form class="form-horizontal">
+                    <!-- Form on left grid -->
+                    <form class="form-horizontal" id="orderForm">
                          <div class="form-group">
                               <label>Name</label>
                               <input type="name" class="form-control" placeholder="Full Name">
@@ -24,16 +24,23 @@
                               <input type="name" class="form-control" placeholder="Phone #">
                          </div>
                          <label>Select your toppings</label>
-                         <select class="form-control">
-                             <option>Cheese Pizza</option>
+                         <select class="form-control" id="pizzaList">
+                            <!-- populated through Javascript -->
                          </select>
                          <label>How many?</label>
                          <select class="form-control" id="numList">
-                            <!-- Is populated through Javascript --> 
+                            <!-- populated through Javascript --> 
                          </select>
+                        <input class="btn btn-default" type="submit" value="Submit" onclick="SubmitForm()">
                     </form>
                </div>
           </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="formOutput">
+                </div>
+            </div>
+        </div>
          <!-- Linked javascript -->
          <script src="pizza.js"></script>
      </body>
