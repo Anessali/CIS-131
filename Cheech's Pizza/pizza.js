@@ -11,7 +11,7 @@ var pizzaType = ['Cheese', 'Pepperoni', 'Bananas', 'Ananas Comosus', 'Meat'];
  * Function populates page *
  ***************************/
 function PopulatePage() {
-    
+
     var idItem;
     var listItem;
     /*   loop populates the 'How many?' Select   */
@@ -34,20 +34,25 @@ function PopulatePage() {
     }
 }
 
-document.addEventListener("click", function(){
-    
-    var formOutput;
-    formOutput = document.getElementById('formOut');
-    formOutput.innerHTML = document.getElementById('orderForm');
-//    var formInfo = document.getElementById('orderForm');
-//    formInfo.innerHTML = document.getElementById('formOut');
-});
+document.addEventListener("submit", function(){
+     //Name
+     var name = '<p>Name: ' + document.getElementById('name').value + '</p>';
+     //Phone Number
+     var num ='<p>Phone Number: ' + document.getElementById('number').value + '</p>';
+     //toppings
+     var toppings = document.getElementById('pizzaList').value;
+     //'How many?' Select
+     var list = document.getElementById('numList').value;
+     var price = 7.99 * list;
+     var tax = 0.076;
+     var roundedPrice = Math.round(price);
+     var cost = '<p>Your order is $' + price + ', with ' + (100 * tax) + '% tax.</p>'
+     var total = '<p>Your total comes to $' + (price * tax + price) + '</p>';
+     var numTop = 'You ordered ' + list + ' ' + toppings + ' pizzas.'
 
-function SubmitForm() {
-    var formOutput;
-    formOutput = document.getElementById('formOut');
-    formOutput.innerHTML = document.getElementById('orderForm');
-}
+     //outputs variables
+     document.getElementById("formOutput").innerHTML = name + num + numTop + cost + total + "<p>Thank you for choosing Cheech's Pizza. Have a wonderful day!</p>";
+}, false);
 
 function Start(){
     PopulatePage();
