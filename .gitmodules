@@ -4,3 +4,5 @@
 [submodule "GroupWithMeganDavidNick"]
 	path = GroupWithMeganDavidNick
 	url = https://github.com/SlyRaider27/GroupProject.git
+[submodule "CIS131GroupProject"]
+	url = git@github.com:KalinBowden/CIS131GroupProject.git
