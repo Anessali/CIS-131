@@ -1,32 +1,35 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Lab 7-1</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lab 7-1</title>
 
-<script language="JavaScript" type="text/javascript">
-<!--
+    <script language="JavaScript" type="text/javascript">
+    <!--
 
-  function checkText(form) {
-   
- // Check myText element value
+      function checkText(form) {
 
+     // Check myText element value
+        var myValue = form.myText.value;
+        if (myValue === null){
+          alert("Please enter a value");
+        } else if (myValue != null) {
+        alert("You've entered: " + myValue);
+        }
+      }
 
-
-  }
-
-//-->
-</script>
-</head>
-<body>
-<h3>CIW JavaScript Specialist</h3>
-<hr />
-<form name="myForm" id="myForm">
-Input data: 
-<input type="text" name="myText">
-<p>
-<input type="button" value="Check Input" onclick="checkText(this.form);" /> <input type="reset">
-</p>
-</form>
-</body>
+    //-->
+    </script>
+  </head>
+  <body>
+    <h3>CIW JavaScript Specialist</h3>
+    <hr />
+    <form name="myForm" id="myForm">
+      Input data:
+      <input type="text" name="myText">
+      <p>
+      <input type="button" value="Check Input" onclick="checkText(this.form);" /> <input type="reset">
+      </p>
+    </form>
+  </body>
 </html>
