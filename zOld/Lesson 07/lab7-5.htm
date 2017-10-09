@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 7-5</title>
+<script type="text/javascript">
+    function checkForm()
+    {
+        var str = '';
+        var elem = document.getElementById('myForm').elements;
+
+       //Insert for statement here//
+
+
+     }
+</script>
+</head>
+
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+
+<form id="myForm" name="myForm" action="lab7-5a.htm">
+<p>
+Your Name: <br /><br />
+<input type="text" name="Your_Name" value="enter your name" />
+</p>
+<p>
+Interesting Fact About You: <br /><br />
+<textarea name="Interesting_Fact">enter some text</textarea>
+</p>
+<input type="submit" value="Submit Data" onclick="return checkForm(this.form);" />
+
+</form>
+<hr />
+<div id="lblValues"></div>
+</body>
+</html>

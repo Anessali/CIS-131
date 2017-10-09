@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 7-4</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+  function isSelected(form) {
+    var len = form.mySelect.length;
+  var theSelections = "Selected options:\n";
+  
+// Create for loop
+
+  for(var i = 0; i < len; i++) {
+    if(form.mySelect.options[i].selected)
+      theSelections += form.mySelect.options[i].text + "\n";
+  }
+  alert(theSelections);
+  } 
+
+//-->
+</script>
+</head>
+
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form name="myForm" id="myForm">
+Select items<br />
+<select name="mySelect" multiple = multiple>
+<option value="1">First option</option>
+<option value="2">Second option</option>
+<option value="3">Third option</option>
+<option value="4">Fourth option</option>
+<option value="5">Fifth option</option>
+<option value="6">Sixth option</option>
+</select>
+
+<p>
+<input type="button" value="Check Selection" onclick=
+"isSelected(this.form);" /> 
+<input type="reset" />
+</p>
+</form>
+</body>
+</html>
