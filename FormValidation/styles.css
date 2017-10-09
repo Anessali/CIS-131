@@ -2,6 +2,10 @@
 
 
 /*~~~Edited Bootstrap~~~*/
+.btn {
+    margin-top: 10px;
+    margin-left: 200px;
+}
 .row {
   margin-left: 10px;
 }
