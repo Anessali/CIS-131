@@ -10,7 +10,7 @@
   </head>
 
   <body>
-      
+
     <form class="form-inline">
         <div class="row">
             <div class="col-md-2">
@@ -21,19 +21,22 @@
               <div class="row">
                   <label>What kind of pet do you have?</label>
               </div>
-                <div class="form-group" class="radio">
-                  <input class="bump" type="radio" name="animal" value = "cats">Cat</br>
-                  <input class="bump" type="radio" name="animal" value = "dogs">Dog</br>
-                  <input class="bump" type="radio" name="animal" value = "ferrets">Ferrets</br>
-                  <input class="bump" type="radio" name="animal" value = "other">Other</br>
+                <div class="form-group" class="bump">
+                  <div class="radio">
+                       <input type="radio" name="animal" value = "cats">Cat</br>
+                       <input type="radio" name="animal" value = "dogs">Dog</br>
+                       <input type="radio" name="animal" value = "ferrets">Ferrets</br>
+                       <input type="radio" name="animal" value = "other">Other</br>
+                  </div>
                 </div>
             </div>
-          
+
           <div class="col-md-2">
               <div class="form-group">
                 <label>Email</label>
                 <input type="email" class="form-control" placeholder="Email">
               </div>
+                <label>How many do you have?</label>
                 <!-- listbox populated by JS -->
                 <select id="listbox"></select>
           </div>
