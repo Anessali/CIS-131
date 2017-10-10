@@ -15,21 +15,18 @@ function submitted(){
     //var email = document.getElementById("email").value;
     //var radio = document.getElementById("radioB").value;
     //var listNum = document.getElementById("listbox").value;
-    document.getElementById("name").style.backgroundColor = "red";
-    if (name.length < 6){
-        //document.style.display();
+}
 
+function validate(){
+
+    if (name.length < 2){
+        document.getElementById("name").style.backgroundColor = "red";
     }
 }
 
-function reg(){
-    //const string
-}
-
 function start(){
-
     popSelect();
 }
 
 window.addEventListener("load", start, false);
-document.addEventListener("submit", submitted, false);
+//document.addEventListener("click", submitted, false);
