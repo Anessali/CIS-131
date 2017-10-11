@@ -1,5 +1,4 @@
 
-
 //populates the listbox
 function popSelect(){
     //var selects = ["Test", "Test2"];
