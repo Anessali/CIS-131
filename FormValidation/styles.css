@@ -1,0 +1,24 @@
+form {
+  border: solid black 2px;
+  background-color: #d6f5d6;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+#listbox{
+  margin-left: 20px;
+}
+/*~~~Edited Bootstrap~~~*/
+.btn {
+    margin-left: 40%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.row {
+}
+
+.form-group {
+  padding: 20px;
+}

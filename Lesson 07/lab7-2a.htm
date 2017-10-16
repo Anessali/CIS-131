@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 7-2a</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+  function isChecked(form) {
+    var len = form.myRadio.length;
+  
+// Create for loop
+
+  for(var i = 0; i < len; i++) {
+    if(form.myRadio[i].checked)
+      alert("Value: " + form.myRadio[i].value);
+  }
+  } 
+
+//-->
+</script>
+</head>
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form name="myForm" id="myForm">
+Select a radio button<br />
+1<input type="radio" name="myRadio" value="First radio button" />
+2<input type="radio" name="myRadio" value="Second radio button" />
+3<input type="radio" name="myRadio" value="Third radio button" />
+<p>
+<input type="button" value="Check Input" onclick="isChecked(this.form);" />
+<input type="reset" />
+</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="txtHere"></div>
+
+    <form method="get" action="thankyou.html" id="form1">
+      <input name="fName">
+      <input name="lName">
+      <select name="year">
+        <option value="0">2017</option>
+        <option value="1">2018</option>
+      </select>
+      <input type="button" value="click here" id ="but">
+      <input type="button" value="submit form" id ="butt2">
+    </form>
+    <script>
+      document.getElementById("but").addEventListener("click", events);
+      document.getElementById("but").addEventListener("click", submitIt);
+
+      function submitIt(){
+        document.getElementById("form1").submit();
+      }
+
+      function events(evts){
+        var strEvent = evts.target.id;
+        document.getElementById("txtHere").innerHTML = strEvent;
+      }
+
+
+    </script>
+  </body>
+</html>
