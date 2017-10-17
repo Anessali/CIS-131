@@ -1,5 +1,5 @@
-
-body{
+/*Overall page edits*/
+body {
     background-image: url("images/background.jpg");
 }
 
@@ -9,12 +9,29 @@ img {
     margin-top: 100px;
     margin-left: 20px;
 }
+/*Page elements*/
 #chrome {
-  height: 130px;
-  width: 130px;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 600px;
+    z-index: 1;
 }
-#racers{
-  position: relative;
+#firefox{
+    position: absolute;
+    top: 550px;
+}
+#exploder{
+    position: absolute;
+    top: 650px;
+    z-index: 2;
+}
+#finish{
+    position: absolute;
+    top: 350px;
+    left: 1400px;
+    width: 500px;
+    height: 500px;
 }
 #stoplight img{
     display:block;
