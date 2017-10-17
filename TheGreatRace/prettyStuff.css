@@ -32,9 +32,16 @@ img {
     left: 1400px;
     width: 500px;
     height: 500px;
+    z-index: -1;
 }
 #stoplight img{
     display:block;
     margin:auto;
     margin-top: 50px;
+}
+
+#moreRam{
+    position: absolute;
+    top: 560px;
+    left: 850px;
 }
