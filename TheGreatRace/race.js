@@ -1,8 +1,7 @@
 //Racers
-var chrome = document.getElementById("chrome");
 var firefox = document.getElementById("firefox");
+var chrome = document.getElementById("chrome");
 var ie = document.getElementById("exploder");
-var champion;
 
 //Counts
 var count = 0,
@@ -10,8 +9,8 @@ var count = 0,
     fMove = 0,
     eMove = 0;
 
-var interval;
 var eSpeed = 5;
+var lever = true;
 
 function lights(){
     document.getElementById("sun").src = "images/sunGreen.png";
@@ -24,44 +23,61 @@ function startRace(){
     firefox.style.left = fMove + "px";
     if (fMove > count) {
         count = fMove;
-        champion = firefox;
     }
-    if (count >= 1550){
+    if (count >= 1550 && fMove >= 1550){
         clearInterval(interval);
-        winner();
+        winner(firefox);
     }
     /*  chrome  */
     cMove += Math.random() * 10;
     chrome.style.left = cMove + "px";
     if (cMove > count){
         count = cMove;
-        champion = chrome;
     }
-    if (count >= 1550){
+    if (count >= 1550 && cMove >= 1550){
         clearInterval(interval);
-        winner();
+        winner(chrome);
     }
     /*  exploder  */
     eMove += Math.random() * eSpeed;
     ie.style.left = eMove + "px";
     if (eMove > count){
         count = eMove;
-        champion = exploder;
     }
-    if (eMove >= 100){
-        document.getElementById("ram").innerHTML = '<button class="btn btn-default" id="moreRam" onclick="installRam()">Quick! Install more RAM!</button>';
+    if (eMove >= 250){
+        document.getElementById("ram").innerHTML = '<button class="btn btn-default" id="moreRam" onclick="installRam()">Quick! Download more RAM!</button>';
     }
-    if (count >= 1550){
+    if (count >= 1550 && eMove >= 1550){
         clearInterval(interval);
-        winner();
+        winner(exploder);
     }
 }
 
-function winner(){
+function winner(champion){
+    var winner = champion.src;
+    document.getElementById("theChampion").innerHTML = '<image src="' + winner + '" ' + 'onclick="reset()"' +'>';
+}
+
+function reset(){
+    document.getElementById("sun").src = "images/sunRed.png";
+    document.getElementById("theChampion").innerHTML = "";
+    document.getElementById("ram").innerHTML = "";
+    exploder.src = "images/exploder.png";
+    firefox.style.left = 0;
+    chrome.style.left = 0;
+    exploder.style.left = 0;
+    count = 0;
+    cMove = 0;
+    fMove = 0;
+    eMove = 0;
+    eSpeed = 5;
+}
+
+function startInterval(){
 
 }
 
 function installRam(){
-    document.getElementById("exploder").src = "images/edge.png";
+    exploder.src = "images/edge.png";
     eSpeed = 15;
 }
