@@ -19,7 +19,7 @@ function DisplayImage() {
 ****************************************/
 //variables
 var timeCount = 0;
-timer = setInterval(ImageSlider, 3000);
+timer = setInterval(ImageSlider, 5000);
 //function
 function ImageSlider(){
     var imgSlide = document.getElementById("displayPic");
