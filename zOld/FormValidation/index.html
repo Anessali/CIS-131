@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Validator</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form class="form-group" id="vetForm">
+        <div class="form-group">
+          <label>Name</label>
+          <div class="error"></div>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label>Email<div class="error"></div></label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label>Phone Number<div class="error"></div></label>
+          <input type="phone" class="form-control" id="phone" placeholder="###-###-####">
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label>What kind of pet do you have?</label>
+            <div class="form-inline" class="bump">
+              <div class="radio" id="radioB">
+                <input type="radio" name="animal" value="cat">Cat</br>
+                <input type="radio" name="animal" value="dog">Dog</br>
+                <input type="radio" name="animal" value="ferret">Ferret</br>
+                <input type="radio" name="animal" value="other">Other</br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label>How many do you have?</label>
+            <div class="row">
+              <!-- listbox populated by JS -->
+              <select type="listbox" id="listbox"></select>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      <div class="row">
+        <button class="btn btn-default" onclick="validate()">Confirm</button>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
