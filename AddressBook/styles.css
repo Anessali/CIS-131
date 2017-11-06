@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+#image {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+h1 {
+    color: #ecf0f1;
+    text-shadow: 3px 3px black;
+}
+h2 {
+    display: inline;
+    margin-top: -10px;
+}
+
+h2:hover {
+    color: #0000FF;
+    cursor: context-menu;
+}
+
+.squish {
+    background-color:  #2e4053;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.innerDiv {
+    background-color: #ecf0f1;
+    width: 97%;
+    margin:auto;
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    border-bottom: 3px solid #0000ff;
+    width: 100%;
+    padding-top: -10px;
+
+}
+.contain {
+
+}
+/* Affects Buttons */
+.btn {
+    margin-bottom: 10px;
+    border-radius: 100%;
+    background-color: #2E4053;
+}
